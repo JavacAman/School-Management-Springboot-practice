@@ -1,0 +1,103 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+        <div class="form-group">
+          <label for="name">ID</label>
+          <input type="text" [(ngModel)]="employees.id" 
+            class="form-control" 
+            id="ID" 
+            name="ID" 
+            placeholder="Enter Your ID"
+            required #name="ngModel">
+        </div>
+         <!--
+        <div [hidden]="!id.pristine" class="alert alert-danger">ID is required</div>
+         -->
+        <div class="form-group">
+            <label for="name">First Name</label>
+            <input type="text" [(ngModel)]="employees.fname" 
+              class="form-control" 
+              id="fname" 
+              name="fname" 
+              placeholder="Enter Your First Name"
+              required #name="ngModel">
+          </div>
+          <!--
+          <div [hidden]="!fname.pristine" class="alert alert-danger">First Name is required</div>
+-->
+          <div class="form-group">
+            <label for="name">Middle Name</label>
+            <input type="text" [(ngModel)]="employees.mname" 
+              class="form-control" 
+              id="mname" 
+              name="mname" 
+              placeholder="Enter Your Midlle Name"
+              required #name="ngModel">
+          </div>
+           <!--
+          <div [hidden]="!mname.pristine" class="alert alert-danger">Middle Name is NOT required</div>
+           -->
+          <div class="form-group">
+            <label for="name">Last Name </label>
+            <input type="text" [(ngModel)]="employees.lname" 
+              class="form-control" 
+              id="lname" 
+              name="lname" 
+              placeholder="Enter Your ID"
+              required #name="ngModel">
+          </div>
+           <!--
+          <div [hidden]="!lname.pristine" class="alert alert-danger">Last Name is required</div>
+           -->
+          <div class="form-group">
+            <label for="name">Email ID</label>
+            <input type="text" [(ngModel)]="employees.emailid" 
+              class="form-control" 
+              id="email" 
+              name="email" 
+              placeholder="Enter Your Email ID"
+              required #name="ngModel">
+          </div>
+           <!--
+          <div [hidden]="!email.pristine" class="alert alert-danger">Email ID is required</div>
+           -->
+          <div class="form-group">
+            <label for="name">Mobile</label>
+            <input type="text" [(ngModel)]="employees.mobile" 
+              class="form-control" 
+              id="mobile" 
+              name="mobile" 
+              placeholder="Enter Your Mobile No"
+              required #name="ngModel">
+          </div>
+           <!--
+          <div [hidden]="!mobile.pristine" class="alert alert-danger">Mobile No is required</div>
+           -->
+          <div class="form-group">
+            <label for="name">User Name</label>
+            <input type="text" [(ngModel)]="employees.username" 
+              class="form-control" 
+              id="username" 
+              name="username" 
+              placeholder="Enter Your User Name "
+              required #name="ngModel">
+          </div>
+           <!--
+          <div [hidden]="!username.pristine" class="alert alert-danger">User Name is required</div>
+           -->
+        <div class="form-group">
+          <label for="email">Password</label>
+          <input type="text" [(ngModel)]="employees.password" 
+            class="form-control" 
+            id="password" 
+            name="password" 
+            placeholder="Enter your Password"
+            required #email="ngModel">
+             <!--
+          <div [hidden]="!password.pristine" class="alert alert-danger">Password is required</div>
+             -->
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </div>

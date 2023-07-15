@@ -1,0 +1,30 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First NAME</th>
+            <th scope="col">Middle Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.fname}}</td>
+            <td>{{ employee.mname}}</td>
+            <td>{{ employee.lname}}</td>
+            <td>{{ employee.emailid}}</td>
+            <td>{{ employee.mobile}}</td>
+            <td>{{ employee.username}}</td>
+            <td>{{ employee.password}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

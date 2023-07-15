@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <h1>Online GST Help Portal ||| </h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button routerLink="/home" class="menu-items"> Home</a>
+        <a mat-button routerLink="/aboutUs" class="menu-items"> About Us </a>
+        <a mat-button routerLink="/order" class="menu-items"> Order </a>
+        <a mat-button routerLink="/ourProduct" class="menu-items"> Our Product </a>
+        <a mat-button routerLink="/events" class="menu-items"> Events </a>
+        <a mat-button routerLink="/contactUs" class="menu-items">Contact Us</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/home" class="menu-items"> Home </a>
+        <a mat-list-item routerLink="/aboutUs" class="menu-items"> About Us </a>
+        <a mat-list-item routerLink="/order" class="menu-items"> Order </a>
+        <a mat-list-item routerLink="/ourProduct" class="menu-items"> Our Product </a>
+        <a mat-list-item routerLink="/events" class="menu-items"> Events </a>
+        <a mat-list-item routerLink="/contactUs" class="menu-items"> Contact Us </a>
+        <a mat-list-item routerLink="/chat" class="menu-items"> Chat Us </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content style="background-color: white; padding-left: inherit;">
+      <div style="height: 60vh;">
+        <div #sidenav>
+        <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+  
+  
+  
